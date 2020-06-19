@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+{% block content %}
+  <h1>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae beatae, odit debitis atque dolores quos? Odit repellat error velit soluta possimus! Ipsam aut, mollitia nisi hic alias minima qui nulla!
+  </h1>
+  <h2>{{content}}</h2>
+  <div>
+    {% for x in content %}
+      <p>{{x}}</p>
+    {% endfor %}
+  </div>
+{% endblock %}

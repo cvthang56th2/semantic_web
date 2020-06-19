@@ -16,10 +16,11 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      ontologyIRI="http://www.semanticweb.org/cvtha/ontologies/2020/5/qlsv">
-    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
-    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
-    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Declaration>
         <Class IRI="#GiangVien"/>
     </Declaration>
@@ -62,6 +63,57 @@
     <Declaration>
         <NamedIndividual IRI="#Sematic_Web"/>
     </Declaration>
+    <ClassAssertion>
+        <Class IRI="#SinhVien"/>
+        <NamedIndividual IRI="#Cao_Viet_Thang"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Khoa"/>
+        <NamedIndividual IRI="#Cong_Nghe_Thong_Tin"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GiangVien"/>
+        <NamedIndividual IRI="#Pham_Thi_Thu_Thuy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MonHoc"/>
+        <NamedIndividual IRI="#Sematic_Web"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Hoc"/>
+        <NamedIndividual IRI="#Cao_Viet_Thang"/>
+        <NamedIndividual IRI="#Sematic_Web"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Hoc"/>
+        <NamedIndividual IRI="#Cao_Viet_Thang"/>
+        <NamedIndividual IRI="#Pham_Thi_Thu_Thuy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ThuocKhoa"/>
+        <NamedIndividual IRI="#Cao_Viet_Thang"/>
+        <NamedIndividual IRI="#Cong_Nghe_Thong_Tin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Day"/>
+        <NamedIndividual IRI="#Pham_Thi_Thu_Thuy"/>
+        <NamedIndividual IRI="#Sematic_Web"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Day"/>
+        <NamedIndividual IRI="#Pham_Thi_Thu_Thuy"/>
+        <NamedIndividual IRI="#Cao_Viet_Thang"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ThuocKhoa"/>
+        <NamedIndividual IRI="#Pham_Thi_Thu_Thuy"/>
+        <NamedIndividual IRI="#Cong_Nghe_Thong_Tin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#ThuocKhoa"/>
+        <NamedIndividual IRI="#Sematic_Web"/>
+        <NamedIndividual IRI="#Cong_Nghe_Thong_Tin"/>
+    </ObjectPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#Ten"/>
         <NamedIndividual IRI="#Cao_Viet_Thang"/>
@@ -96,8 +148,16 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#ThuocKhoa"/>
+        <Class IRI="#MonHoc"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#ThuocKhoa"/>
         <Class IRI="#SinhVien"/>
     </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Day"/>
+        <Class IRI="#MonHoc"/>
+    </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#Day"/>
         <Class IRI="#SinhVien"/>
@@ -105,6 +165,10 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="#Hoc"/>
         <Class IRI="#GiangVien"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Hoc"/>
+        <Class IRI="#MonHoc"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#ThuocKhoa"/>

@@ -1,17 +1,9 @@
 from owlready2 import *
 onto = get_ontology("./qlsv.owl").load()
 text = ""
-searchResult = onto.search(iri = "*")
+searchResult = onto.search(Hoc = onto.search_one(Ten = "Sematic Web"))
+print(searchResult)
 for x in searchResult:
   text += " " + x.name
 
-from flask import Flask
-
-app = Flask(__name__)
-
-@app.route("/")
-def home():
-  return text
-
-if __name__ == "__main__":
-  app.run()
+print(text)
