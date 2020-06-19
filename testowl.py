@@ -8,21 +8,22 @@ from flask import Flask, render_template, request
 app = Flask(__name__)
 
 @app.route("/")
-def home():
-  return render_template('index.html', content=['thang', 'thang cao'])
-
-@app.route("/search")
 def search():
+  searchResult = []
   keyword = request.args.get('keyword')
+  searchBy = request.args.get('searchBy')
+  sortType = request.args.get('sortType')
   if keyword is None:
     keyword = ''
-  searchResult = []
-  monHoc = onto.search_one(Ten = "*"+ keyword +"*")
-  if monHoc:
-    for x in onto.search(Hoc = monHoc):
-      searchResult.append(x.name)
+    for item in onto.search(iri = "*"):
+      searchResult.append(item.name)
+  else:
+    monHoc = onto.search_one(Ten = "*"+ keyword +"*")
+    if monHoc:
+      for item in onto.search(Hoc = monHoc):
+        searchResult.append(item.name)
 
-  return render_template('search.html', keyword = keyword, searchResult = searchResult)
+  return render_template('index.html', keyword = keyword, searchResult = searchResult, searchBy = searchBy, sortType = sortType)
 
 if __name__ == "__main__":
   app.run()
