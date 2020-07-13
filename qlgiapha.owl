@@ -1,0 +1,737 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/cvtha/ontologies/2020/5/gia-pha"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/cvtha/ontologies/2020/5/gia-pha">
+    <Prefix name="" IRI="http://www.semanticweb.org/cvtha/ontologies/2020/5/gia-pha"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Aunt"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Daughter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Father"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Man"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mother"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Nephew"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Niece"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Son"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Uncle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Woman"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#grandDaughter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#grandFather"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#grandMother"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#grandSon"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isAunt"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isBrother"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isDaughter"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isFather"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isGranddaughter"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isGrandfather"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isGrandmother"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isGrandson"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isHusband"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isMother"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isNephew"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isNiece"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isSibling"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isSister"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isSon"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isUncle"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isWife"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasAddress"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasAge"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasName"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Diem"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dong"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ha"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hau"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hong"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Long"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Phuc"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Thang"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Thong"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tuoi"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Van"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Yen"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Aunt"/>
+        <Class IRI="#Woman"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Daughter"/>
+        <Class IRI="#Woman"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Father"/>
+        <Class IRI="#Man"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Man"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mother"/>
+        <Class IRI="#Woman"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Nephew"/>
+        <Class IRI="#Man"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Niece"/>
+        <Class IRI="#Woman"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Son"/>
+        <Class IRI="#Man"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Uncle"/>
+        <Class IRI="#Man"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Woman"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#grandDaughter"/>
+        <Class IRI="#Woman"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#grandFather"/>
+        <Class IRI="#Man"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#grandMother"/>
+        <Class IRI="#Woman"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#grandSon"/>
+        <Class IRI="#Man"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#grandDaughter"/>
+        <NamedIndividual IRI="#Diem"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mother"/>
+        <NamedIndividual IRI="#Dong"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#grandMother"/>
+        <NamedIndividual IRI="#Ha"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Daughter"/>
+        <NamedIndividual IRI="#Hau"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#grandFather"/>
+        <NamedIndividual IRI="#Hong"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Nephew"/>
+        <NamedIndividual IRI="#Long"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#grandSon"/>
+        <NamedIndividual IRI="#Phuc"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Son"/>
+        <NamedIndividual IRI="#Thang"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Father"/>
+        <NamedIndividual IRI="#Thong"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Aunt"/>
+        <NamedIndividual IRI="#Tuoi"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Uncle"/>
+        <NamedIndividual IRI="#Van"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Niece"/>
+        <NamedIndividual IRI="#Yen"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isWife"/>
+        <NamedIndividual IRI="#Dong"/>
+        <NamedIndividual IRI="#Thong"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isFather"/>
+        <NamedIndividual IRI="#Thong"/>
+        <NamedIndividual IRI="#Hau"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isFather"/>
+        <NamedIndividual IRI="#Thong"/>
+        <NamedIndividual IRI="#Thang"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isHusband"/>
+        <NamedIndividual IRI="#Thong"/>
+        <NamedIndividual IRI="#Dong"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasName"/>
+        <NamedIndividual IRI="#Diem"/>
+        <Literal>Diem</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasName"/>
+        <NamedIndividual IRI="#Dong"/>
+        <Literal>Dong</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasName"/>
+        <NamedIndividual IRI="#Ha"/>
+        <Literal>Ha</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasName"/>
+        <NamedIndividual IRI="#Hau"/>
+        <Literal>Hau</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasName"/>
+        <NamedIndividual IRI="#Hong"/>
+        <Literal>Hong</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasName"/>
+        <NamedIndividual IRI="#Long"/>
+        <Literal>Long</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasName"/>
+        <NamedIndividual IRI="#Phuc"/>
+        <Literal>Phuc</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasName"/>
+        <NamedIndividual IRI="#Thang"/>
+        <Literal>Thang</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasName"/>
+        <NamedIndividual IRI="#Thong"/>
+        <Literal>Thong</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasName"/>
+        <NamedIndividual IRI="#Tuoi"/>
+        <Literal>Tuoi</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasName"/>
+        <NamedIndividual IRI="#Van"/>
+        <Literal>Van</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasName"/>
+        <NamedIndividual IRI="#Yen"/>
+        <Literal>Yen</Literal>
+    </DataPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isAunt"/>
+        <Class IRI="#Woman"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isBrother"/>
+        <Class IRI="#Man"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isDaughter"/>
+        <Class IRI="#Woman"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isFather"/>
+        <Class IRI="#Man"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isGranddaughter"/>
+        <Class IRI="#Woman"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isGrandfather"/>
+        <Class IRI="#Man"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isGrandmother"/>
+        <Class IRI="#Woman"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isGrandson"/>
+        <Class IRI="#Man"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isHusband"/>
+        <Class IRI="#Man"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isMother"/>
+        <Class IRI="#Woman"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isNephew"/>
+        <Class IRI="#Man"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isNiece"/>
+        <Class IRI="#Woman"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isSibling"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isSister"/>
+        <Class IRI="#Woman"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isSon"/>
+        <Class IRI="#Man"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isUncle"/>
+        <Class IRI="#Man"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isWife"/>
+        <Class IRI="#Woman"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isAunt"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isBrother"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isDaughter"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isFather"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isGranddaughter"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isGrandfather"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isGrandmother"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isGrandson"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isHusband"/>
+        <Class IRI="#Woman"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isMother"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isNephew"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isNiece"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isSibling"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isSister"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isSon"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isUncle"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isWife"/>
+        <Class IRI="#Man"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasAddress"/>
+        <Class IRI="#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasAge"/>
+        <Class IRI="#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasName"/>
+        <Class IRI="#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasAddress"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasAge"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>S4</Literal>
+        </Annotation>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#isSibling"/>
+                <Variable IRI="urn:swrl:var#x"/>
+                <Variable IRI="urn:swrl:var#y"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#Man"/>
+                <Variable IRI="urn:swrl:var#y"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#isBrother"/>
+                <Variable IRI="urn:swrl:var#y"/>
+                <Variable IRI="urn:swrl:var#x"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>S3</Literal>
+        </Annotation>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#isFather"/>
+                <Variable IRI="urn:swrl:var#x"/>
+                <Variable IRI="urn:swrl:var#y"/>
+            </ObjectPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#Woman"/>
+                <Variable IRI="urn:swrl:var#y"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#isDaughter"/>
+                <Variable IRI="urn:swrl:var#y"/>
+                <Variable IRI="urn:swrl:var#x"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>S7</Literal>
+        </Annotation>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#isMother"/>
+                <Variable IRI="urn:swrl:var#x"/>
+                <Variable IRI="urn:swrl:var#y"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#isBrother"/>
+                <Variable IRI="urn:swrl:var#z"/>
+                <Variable IRI="urn:swrl:var#x"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#isUncle"/>
+                <Variable IRI="urn:swrl:var#z"/>
+                <Variable IRI="urn:swrl:var#y"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>S6</Literal>
+        </Annotation>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#isSibling"/>
+                <Variable IRI="urn:swrl:var#x"/>
+                <Variable IRI="urn:swrl:var#y"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#isDaughter"/>
+                <Variable IRI="urn:swrl:var#z"/>
+                <Variable IRI="urn:swrl:var#y"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#isNiece"/>
+                <Variable IRI="urn:swrl:var#z"/>
+                <Variable IRI="urn:swrl:var#x"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>S1</Literal>
+        </Annotation>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#isFather"/>
+                <Variable IRI="urn:swrl:var#x"/>
+                <Variable IRI="urn:swrl:var#y"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#isFather"/>
+                <Variable IRI="urn:swrl:var#z"/>
+                <Variable IRI="urn:swrl:var#x"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#isGrandfather"/>
+                <Variable IRI="urn:swrl:var#z"/>
+                <Variable IRI="urn:swrl:var#y"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>S2</Literal>
+        </Annotation>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#isFather"/>
+                <Variable IRI="urn:swrl:var#x"/>
+                <Variable IRI="urn:swrl:var#y"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#isSister"/>
+                <Variable IRI="urn:swrl:var#z"/>
+                <Variable IRI="urn:swrl:var#x"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#isAunt"/>
+                <Variable IRI="urn:swrl:var#z"/>
+                <Variable IRI="urn:swrl:var#y"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>S5</Literal>
+        </Annotation>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#isSibling"/>
+                <Variable IRI="urn:swrl:var#x"/>
+                <Variable IRI="urn:swrl:var#y"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#isSon"/>
+                <Variable IRI="urn:swrl:var#z"/>
+                <Variable IRI="urn:swrl:var#y"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#isNephew"/>
+                <Variable IRI="urn:swrl:var#z"/>
+                <Variable IRI="urn:swrl:var#x"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

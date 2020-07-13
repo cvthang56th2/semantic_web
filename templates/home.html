@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Semantic Web Search Engine</title>
+  <style>
+    .wrap-page {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    .d-flex {
+      display: flex;
+    }
+    .flex-column {
+      flex-direction: column;
+    }
+    .flex-0-0 {
+      flex-shrink: 0;
+      flex-grow: 0;
+      flex-basis: 0;
+    }
+    .flex-1-1 {
+      flex-shrink: 1;
+      flex-grow: 1;
+      flex-basis: auto;
+    }
+    .overflow-y-auto {
+      overflow-y: auto;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap-page">
+    <form class="d-flex flex-0-0">
+      <input type="text" name="keyword" id="" placeholder="Search...">
+      <button type="submit">Search</button>
+    </form>
+
+    <div class="wrap-search-result d-flex flex-1-1 flex-column">
+      {% if keyword %}
+      <h2>Search results for {{keyword}}</h2>
+      <span class="result-count">{{searchResult|length}} items</span>
+      {% else %}
+      <h2>All Items</h2>
+      {% endif %}
+      {% for item in searchResult %}
+      <div>{{item}}</div>
+      {% endfor %}
+    </div>
+  </div>
+</body>
+
+</html>
