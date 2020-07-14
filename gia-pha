@@ -34,12 +34,12 @@ Object properties: [
     isGrandmother (domain: Woman, range: Person)
     isGrandson (domain: Man, range: Person)
     isGranddaughter(domain: Woman, range: Person)
-    isSibIing (domain: Person, range: Person).
+    isSibling (domain: Person, range: Person).
 Datatype properties: hasName, hasAge, hasAddress. Domain của Datatype properties là Person và range của hasName và hasAddress là string, range cüa Age là int.
 
 S1: isFather(?x,?y) isFather(?z,?x) -> isGrandfather(?z,?y)
 S2: isFather(?x,?y) isSister(?z,?x) -> isAunt(?z,?y)
-S3: isFather(?x,?y) Woman(?y) -> isDaugher(?y,?x)
+S3: isFather(?x,?y) Woman(?y) -> isDaughter(?y,?x)
 S4: isSibling(?x,?y) Man(?y) -> isBrother(?y,?x)
 S5: isSibling(?x,?y) isSon(?z,?y) ->isNephew(?z,?x)
 S6: isSibling(?x, ?y) isDaughter(?z, ?y) -> isNiece(?z, ?x)
