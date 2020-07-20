@@ -1,0 +1,1293 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/quanlidetai"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/quanlidetai">
+    <Prefix name="" IRI="http://www.semanticweb.org/quanlidetai"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#CHUC_VU"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DUAN"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LANDING_PAGE"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MOBILE_APP"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NHAN_VIEN"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TEAM"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WEBSITE"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WEB_APPLICATION"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#CV_cua_NV"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#NV_co_CV"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#duan_tao_ra_boi_team"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#nv_thuoc_team"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#team_co_nv"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#team_tao_ra_duan"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#DA"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#DATA_NHAN_VIEN"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#DIA_CHI"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#EMAIL"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#HO_TEN"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#NGAY_SINH"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#NOI_SINH"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#NamVaoNganh"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#QUE_QUAN"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#SDT"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#TEN_CV"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#TEN_DA"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#TEN_TEAM"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ngon_ngu"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#tom_tat"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#GROUP_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#GROUP_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#GROUP_3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#GROUP_MAZI"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MAZI_APP"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MUSIC_APP_ANDROID"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NV01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NV02"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NV03"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NV04"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NV05"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NV06"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NV07"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NV08"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NV09"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NV10"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#P360"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RealEstate_PAGE"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#LANDING_PAGE"/>
+        <Class IRI="#DUAN"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MOBILE_APP"/>
+        <Class IRI="#DUAN"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WEBSITE"/>
+        <Class IRI="#DUAN"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WEB_APPLICATION"/>
+        <Class IRI="#DUAN"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#CHUC_VU"/>
+        <Class IRI="#DUAN"/>
+        <Class IRI="#NHAN_VIEN"/>
+        <Class IRI="#TEAM"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#LANDING_PAGE"/>
+        <Class IRI="#MOBILE_APP"/>
+        <Class IRI="#WEBSITE"/>
+        <Class IRI="#WEB_APPLICATION"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#TEAM"/>
+        <NamedIndividual IRI="#GROUP_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TEAM"/>
+        <NamedIndividual IRI="#GROUP_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TEAM"/>
+        <NamedIndividual IRI="#GROUP_3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TEAM"/>
+        <NamedIndividual IRI="#GROUP_MAZI"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WEB_APPLICATION"/>
+        <NamedIndividual IRI="#MAZI_APP"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MOBILE_APP"/>
+        <NamedIndividual IRI="#MUSIC_APP_ANDROID"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NHAN_VIEN"/>
+        <NamedIndividual IRI="#NV01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NHAN_VIEN"/>
+        <NamedIndividual IRI="#NV02"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NHAN_VIEN"/>
+        <NamedIndividual IRI="#NV03"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NHAN_VIEN"/>
+        <NamedIndividual IRI="#NV04"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NHAN_VIEN"/>
+        <NamedIndividual IRI="#NV05"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NHAN_VIEN"/>
+        <NamedIndividual IRI="#NV06"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NHAN_VIEN"/>
+        <NamedIndividual IRI="#NV07"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NHAN_VIEN"/>
+        <NamedIndividual IRI="#NV08"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NHAN_VIEN"/>
+        <NamedIndividual IRI="#NV09"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NHAN_VIEN"/>
+        <NamedIndividual IRI="#NV10"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#WEBSITE"/>
+        <NamedIndividual IRI="#P360"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#LANDING_PAGE"/>
+        <NamedIndividual IRI="#RealEstate_PAGE"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#duan_tao_ra_boi_team"/>
+        <NamedIndividual IRI="#MAZI_APP"/>
+        <NamedIndividual IRI="#GROUP_MAZI"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#duan_tao_ra_boi_team"/>
+        <NamedIndividual IRI="#MUSIC_APP_ANDROID"/>
+        <NamedIndividual IRI="#GROUP_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#nv_thuoc_team"/>
+        <NamedIndividual IRI="#NV01"/>
+        <NamedIndividual IRI="#GROUP_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#nv_thuoc_team"/>
+        <NamedIndividual IRI="#NV02"/>
+        <NamedIndividual IRI="#GROUP_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#nv_thuoc_team"/>
+        <NamedIndividual IRI="#NV03"/>
+        <NamedIndividual IRI="#GROUP_MAZI"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#nv_thuoc_team"/>
+        <NamedIndividual IRI="#NV04"/>
+        <NamedIndividual IRI="#GROUP_MAZI"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#nv_thuoc_team"/>
+        <NamedIndividual IRI="#NV05"/>
+        <NamedIndividual IRI="#GROUP_MAZI"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#nv_thuoc_team"/>
+        <NamedIndividual IRI="#NV06"/>
+        <NamedIndividual IRI="#GROUP_MAZI"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#nv_thuoc_team"/>
+        <NamedIndividual IRI="#NV07"/>
+        <NamedIndividual IRI="#GROUP_3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#nv_thuoc_team"/>
+        <NamedIndividual IRI="#NV08"/>
+        <NamedIndividual IRI="#GROUP_3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#nv_thuoc_team"/>
+        <NamedIndividual IRI="#NV09"/>
+        <NamedIndividual IRI="#GROUP_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#nv_thuoc_team"/>
+        <NamedIndividual IRI="#NV10"/>
+        <NamedIndividual IRI="#GROUP_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#duan_tao_ra_boi_team"/>
+        <NamedIndividual IRI="#P360"/>
+        <NamedIndividual IRI="#GROUP_3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#duan_tao_ra_boi_team"/>
+        <NamedIndividual IRI="#RealEstate_PAGE"/>
+        <NamedIndividual IRI="#GROUP_2"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#TEN_TEAM"/>
+        <NamedIndividual IRI="#GROUP_1"/>
+        <Literal>GROUP_1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#TEN_TEAM"/>
+        <NamedIndividual IRI="#GROUP_2"/>
+        <Literal>GROUP_2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#TEN_TEAM"/>
+        <NamedIndividual IRI="#GROUP_3"/>
+        <Literal>GROUP_3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#TEN_TEAM"/>
+        <NamedIndividual IRI="#GROUP_MAZI"/>
+        <Literal>GROUP_MAZI</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#TEN_DA"/>
+        <NamedIndividual IRI="#MAZI_APP"/>
+        <Literal>MAZI APPLICATON</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ngon_ngu"/>
+        <NamedIndividual IRI="#MAZI_APP"/>
+        <Literal></Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#tom_tat"/>
+        <NamedIndividual IRI="#MAZI_APP"/>
+        <Literal></Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#TEN_DA"/>
+        <NamedIndividual IRI="#MUSIC_APP_ANDROID"/>
+        <Literal>MUSIC_APP_ANDROID</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ngon_ngu"/>
+        <NamedIndividual IRI="#MUSIC_APP_ANDROID"/>
+        <Literal>Java</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DATA_NHAN_VIEN"/>
+        <NamedIndividual IRI="#NV01"/>
+        <Literal>0905337987</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DATA_NHAN_VIEN"/>
+        <NamedIndividual IRI="#NV01"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">1965-06-01T01:01:01</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DATA_NHAN_VIEN"/>
+        <NamedIndividual IRI="#NV01"/>
+        <Literal>1990</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DATA_NHAN_VIEN"/>
+        <NamedIndividual IRI="#NV01"/>
+        <Literal>Chế Lan Viên - Nha Trang</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DATA_NHAN_VIEN"/>
+        <NamedIndividual IRI="#NV01"/>
+        <Literal>Phú Yên</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DATA_NHAN_VIEN"/>
+        <NamedIndividual IRI="#NV01"/>
+        <Literal>dinhcongdanh@9thwonder.com</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DATA_NHAN_VIEN"/>
+        <NamedIndividual IRI="#NV01"/>
+        <Literal>Đinh Công Danh</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DIA_CHI"/>
+        <NamedIndividual IRI="#NV01"/>
+        <Literal>Chế Lan Viên - Nha Trang</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#EMAIL"/>
+        <NamedIndividual IRI="#NV01"/>
+        <Literal>dinhcongdanh@9thwonder.com</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#HO_TEN"/>
+        <NamedIndividual IRI="#NV01"/>
+        <Literal>Đinh Công Danh</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#NGAY_SINH"/>
+        <NamedIndividual IRI="#NV01"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">1965-06-01T01:01:01</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#NamVaoNganh"/>
+        <NamedIndividual IRI="#NV01"/>
+        <Literal>1990</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#QUE_QUAN"/>
+        <NamedIndividual IRI="#NV01"/>
+        <Literal>Phú Yên</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#SDT"/>
+        <NamedIndividual IRI="#NV01"/>
+        <Literal>0905337987</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DATA_NHAN_VIEN"/>
+        <NamedIndividual IRI="#NV02"/>
+        <Literal>00988642157</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DATA_NHAN_VIEN"/>
+        <NamedIndividual IRI="#NV02"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">1983-07-27T01:01:01</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DATA_NHAN_VIEN"/>
+        <NamedIndividual IRI="#NV02"/>
+        <Literal>2005</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DATA_NHAN_VIEN"/>
+        <NamedIndividual IRI="#NV02"/>
+        <Literal>Diên Khánh - Nha Trang</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DATA_NHAN_VIEN"/>
+        <NamedIndividual IRI="#NV02"/>
+        <Literal>Lê Thị Anh Đoan</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DATA_NHAN_VIEN"/>
+        <NamedIndividual IRI="#NV02"/>
+        <Literal>Nguyễn Liêm</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DATA_NHAN_VIEN"/>
+        <NamedIndividual IRI="#NV02"/>
+        <Literal>nguyenliem@9thwonder.com</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DIA_CHI"/>
+        <NamedIndividual IRI="#NV02"/>
+        <Literal>Hà Thanh - Nha Trang</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#EMAIL"/>
+        <NamedIndividual IRI="#NV02"/>
+        <Literal>nguyenliem@9thwonder.com</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#HO_TEN"/>
+        <NamedIndividual IRI="#NV02"/>
+        <Literal>Nguyễn Liêm</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#NGAY_SINH"/>
+        <NamedIndividual IRI="#NV02"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">1983-07-27T01:01:01</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#NOI_SINH"/>
+        <NamedIndividual IRI="#NV02"/>
+        <Literal>Diên Khánh - Nha Trang</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#NamVaoNganh"/>
+        <NamedIndividual IRI="#NV02"/>
+        <Literal>2005</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#QUE_QUAN"/>
+        <NamedIndividual IRI="#NV02"/>
+        <Literal>Diên Khánh - Nha Trang</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#SDT"/>
+        <NamedIndividual IRI="#NV02"/>
+        <Literal>00988642157</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DATA_NHAN_VIEN"/>
+        <NamedIndividual IRI="#NV03"/>
+        <Literal>09234776726382</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DATA_NHAN_VIEN"/>
+        <NamedIndividual IRI="#NV03"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">1990-10-11T01:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DATA_NHAN_VIEN"/>
+        <NamedIndividual IRI="#NV03"/>
+        <Literal>2012</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DATA_NHAN_VIEN"/>
+        <NamedIndividual IRI="#NV03"/>
+        <Literal>Lê Chân - Nha Trang</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DATA_NHAN_VIEN"/>
+        <NamedIndividual IRI="#NV03"/>
+        <Literal>Nha Trang</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DATA_NHAN_VIEN"/>
+        <NamedIndividual IRI="#NV03"/>
+        <Literal>Trà Thái Lợi</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DATA_NHAN_VIEN"/>
+        <NamedIndividual IRI="#NV03"/>
+        <Literal>trathailoi@9thwonder.com</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DIA_CHI"/>
+        <NamedIndividual IRI="#NV03"/>
+        <Literal>Lê Chân - Nha Trang</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#EMAIL"/>
+        <NamedIndividual IRI="#NV03"/>
+        <Literal>trathailoi@9thwonder.com</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#HO_TEN"/>
+        <NamedIndividual IRI="#NV03"/>
+        <Literal>Trà Thái Lợi</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#NGAY_SINH"/>
+        <NamedIndividual IRI="#NV03"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">1990-10-11T01:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#NOI_SINH"/>
+        <NamedIndividual IRI="#NV03"/>
+        <Literal>Nha Trang</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#NamVaoNganh"/>
+        <NamedIndividual IRI="#NV03"/>
+        <Literal>2012</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#QUE_QUAN"/>
+        <NamedIndividual IRI="#NV03"/>
+        <Literal>Nha Trang</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#SDT"/>
+        <NamedIndividual IRI="#NV03"/>
+        <Literal>09234776726382</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DATA_NHAN_VIEN"/>
+        <NamedIndividual IRI="#NV04"/>
+        <Literal>0987502856</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DATA_NHAN_VIEN"/>
+        <NamedIndividual IRI="#NV04"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">1985-02-23T00:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DATA_NHAN_VIEN"/>
+        <NamedIndividual IRI="#NV04"/>
+        <Literal>2012</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DATA_NHAN_VIEN"/>
+        <NamedIndividual IRI="#NV04"/>
+        <Literal>Cao Viết Thắng</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DATA_NHAN_VIEN"/>
+        <NamedIndividual IRI="#NV04"/>
+        <Literal>Hoàng Bá Kim</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DATA_NHAN_VIEN"/>
+        <NamedIndividual IRI="#NV04"/>
+        <Literal>Vĩnh Điềm Trung - Nha Trang</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DATA_NHAN_VIEN"/>
+        <NamedIndividual IRI="#NV04"/>
+        <Literal>caovietthang@9thwonder.com</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DIA_CHI"/>
+        <NamedIndividual IRI="#NV04"/>
+        <Literal>Vĩnh Điềm Trung - Nha Trang</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#EMAIL"/>
+        <NamedIndividual IRI="#NV04"/>
+        <Literal>caovietthang@9thwonder.com</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#HO_TEN"/>
+        <NamedIndividual IRI="#NV04"/>
+        <Literal>Cao Viết Thắng</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#NGAY_SINH"/>
+        <NamedIndividual IRI="#NV04"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">1985-02-23T00:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#NOI_SINH"/>
+        <NamedIndividual IRI="#NV04"/>
+        <Literal>Nha Trang</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#NamVaoNganh"/>
+        <NamedIndividual IRI="#NV04"/>
+        <Literal>2012</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#QUE_QUAN"/>
+        <NamedIndividual IRI="#NV04"/>
+        <Literal>Nha Trang</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#SDT"/>
+        <NamedIndividual IRI="#NV04"/>
+        <Literal>0987502856</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DATA_NHAN_VIEN"/>
+        <NamedIndividual IRI="#NV05"/>
+        <Literal>0905135486</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DATA_NHAN_VIEN"/>
+        <NamedIndividual IRI="#NV05"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">1971-03-08T00:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DATA_NHAN_VIEN"/>
+        <NamedIndividual IRI="#NV05"/>
+        <Literal>1995</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DATA_NHAN_VIEN"/>
+        <NamedIndividual IRI="#NV05"/>
+        <Literal>Hoàng Thị Hồng Phúc</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DATA_NHAN_VIEN"/>
+        <NamedIndividual IRI="#NV05"/>
+        <Literal>Nguyễn Tấn An</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DATA_NHAN_VIEN"/>
+        <NamedIndividual IRI="#NV05"/>
+        <Literal>Thừa Thiên Huế</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DATA_NHAN_VIEN"/>
+        <NamedIndividual IRI="#NV05"/>
+        <Literal>nguyentanan@9thwonder.com</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DIA_CHI"/>
+        <NamedIndividual IRI="#NV05"/>
+        <Literal>Mê Linh - Nha Trang</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#EMAIL"/>
+        <NamedIndividual IRI="#NV05"/>
+        <Literal>nguyentanan@9thwonder.com</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#HO_TEN"/>
+        <NamedIndividual IRI="#NV05"/>
+        <Literal>Nguyễn Tấn An</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#NGAY_SINH"/>
+        <NamedIndividual IRI="#NV05"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">1971-03-08T00:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#NOI_SINH"/>
+        <NamedIndividual IRI="#NV05"/>
+        <Literal>Thừa Thiên Huế</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#NamVaoNganh"/>
+        <NamedIndividual IRI="#NV05"/>
+        <Literal>1995</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#QUE_QUAN"/>
+        <NamedIndividual IRI="#NV05"/>
+        <Literal>Thừa Thiên Huế</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#SDT"/>
+        <NamedIndividual IRI="#NV05"/>
+        <Literal>0905135486</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DATA_NHAN_VIEN"/>
+        <NamedIndividual IRI="#NV06"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">1981-04-21T00:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DATA_NHAN_VIEN"/>
+        <NamedIndividual IRI="#NV06"/>
+        <Literal>2002</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DATA_NHAN_VIEN"/>
+        <NamedIndividual IRI="#NV06"/>
+        <Literal>Huỳnh Mẫn Trân</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DATA_NHAN_VIEN"/>
+        <NamedIndividual IRI="#NV06"/>
+        <Literal>Nguyễn Như Ý</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DATA_NHAN_VIEN"/>
+        <NamedIndividual IRI="#NV06"/>
+        <Literal>Vĩnh Điềm Trung - Nha Trang</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DATA_NHAN_VIEN"/>
+        <NamedIndividual IRI="#NV06"/>
+        <Literal>nguyennhuy@9thwonder.com</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DIA_CHI"/>
+        <NamedIndividual IRI="#NV06"/>
+        <Literal>Vĩnh Điềm Trung - Nha Trang</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#EMAIL"/>
+        <NamedIndividual IRI="#NV06"/>
+        <Literal>nguyennhuy@9thwonder.com</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#HO_TEN"/>
+        <NamedIndividual IRI="#NV06"/>
+        <Literal>Nguyễn Như Ý</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#NGAY_SINH"/>
+        <NamedIndividual IRI="#NV06"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">1981-04-21T00:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#NOI_SINH"/>
+        <NamedIndividual IRI="#NV06"/>
+        <Literal>Ninh Hòa - Khánh Hòa</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#NamVaoNganh"/>
+        <NamedIndividual IRI="#NV06"/>
+        <Literal>2002</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#QUE_QUAN"/>
+        <NamedIndividual IRI="#NV06"/>
+        <Literal>Ninh Hòa - Khánh Hòa</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DATA_NHAN_VIEN"/>
+        <NamedIndividual IRI="#NV07"/>
+        <Literal>0356008524</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DATA_NHAN_VIEN"/>
+        <NamedIndividual IRI="#NV07"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">1988-06-20T00:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DATA_NHAN_VIEN"/>
+        <NamedIndividual IRI="#NV07"/>
+        <Literal>2010</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DATA_NHAN_VIEN"/>
+        <NamedIndividual IRI="#NV07"/>
+        <Literal>Huỳnh Đức</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DATA_NHAN_VIEN"/>
+        <NamedIndividual IRI="#NV07"/>
+        <Literal>Phong DDienf - Thừa Thiên Huế</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DATA_NHAN_VIEN"/>
+        <NamedIndividual IRI="#NV07"/>
+        <Literal>Phước Đồng - Nha Trang</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DATA_NHAN_VIEN"/>
+        <NamedIndividual IRI="#NV07"/>
+        <Literal>Trần Thị Quỳnh Châu</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DATA_NHAN_VIEN"/>
+        <NamedIndividual IRI="#NV07"/>
+        <Literal>huynhduc@9thwonder.com</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DIA_CHI"/>
+        <NamedIndividual IRI="#NV07"/>
+        <Literal>Phước Đồng - Nha Trang</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#EMAIL"/>
+        <NamedIndividual IRI="#NV07"/>
+        <Literal>huynhduc@9thwonder.com</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#HO_TEN"/>
+        <NamedIndividual IRI="#NV07"/>
+        <Literal>Huỳnh Đức</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#NGAY_SINH"/>
+        <NamedIndividual IRI="#NV07"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">1988-06-20T00:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#NOI_SINH"/>
+        <NamedIndividual IRI="#NV07"/>
+        <Literal>Phong DDienf - Thừa Thiên Huế</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#NamVaoNganh"/>
+        <NamedIndividual IRI="#NV07"/>
+        <Literal>2010</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#QUE_QUAN"/>
+        <NamedIndividual IRI="#NV07"/>
+        <Literal>Thừa Thiên Huế</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#SDT"/>
+        <NamedIndividual IRI="#NV07"/>
+        <Literal>0356008524</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DATA_NHAN_VIEN"/>
+        <NamedIndividual IRI="#NV08"/>
+        <Literal>09875432176</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DATA_NHAN_VIEN"/>
+        <NamedIndividual IRI="#NV08"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">1988-11-10T00:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DATA_NHAN_VIEN"/>
+        <NamedIndividual IRI="#NV08"/>
+        <Literal>2010</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DATA_NHAN_VIEN"/>
+        <NamedIndividual IRI="#NV08"/>
+        <Literal>Lưu Hải Phong</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DATA_NHAN_VIEN"/>
+        <NamedIndividual IRI="#NV08"/>
+        <Literal>Vĩnh Điềm Trung - Nha Trang</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DATA_NHAN_VIEN"/>
+        <NamedIndividual IRI="#NV08"/>
+        <Literal>Vũ Võ</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DATA_NHAN_VIEN"/>
+        <NamedIndividual IRI="#NV08"/>
+        <Literal>vuvo@9thwonder.com</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DIA_CHI"/>
+        <NamedIndividual IRI="#NV08"/>
+        <Literal>Vĩnh Điềm Trung - Nha Trang</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#EMAIL"/>
+        <NamedIndividual IRI="#NV08"/>
+        <Literal>vuvo@9thwonder.com</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#HO_TEN"/>
+        <NamedIndividual IRI="#NV08"/>
+        <Literal>Vũ Võ</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#NGAY_SINH"/>
+        <NamedIndividual IRI="#NV08"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">1988-11-10T00:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#NOI_SINH"/>
+        <NamedIndividual IRI="#NV08"/>
+        <Literal>Quảng Bình</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#NamVaoNganh"/>
+        <NamedIndividual IRI="#NV08"/>
+        <Literal>2010</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#QUE_QUAN"/>
+        <NamedIndividual IRI="#NV08"/>
+        <Literal>Quảng Bình</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#SDT"/>
+        <NamedIndividual IRI="#NV08"/>
+        <Literal>09875432176</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DATA_NHAN_VIEN"/>
+        <NamedIndividual IRI="#NV09"/>
+        <Literal>0987525416</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DATA_NHAN_VIEN"/>
+        <NamedIndividual IRI="#NV09"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">1988-08-18T00:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DATA_NHAN_VIEN"/>
+        <NamedIndividual IRI="#NV09"/>
+        <Literal>2012</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DATA_NHAN_VIEN"/>
+        <NamedIndividual IRI="#NV09"/>
+        <Literal>Huỳnh Diễm Hồng Thư</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DATA_NHAN_VIEN"/>
+        <NamedIndividual IRI="#NV09"/>
+        <Literal>Trang Nguyễn</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DATA_NHAN_VIEN"/>
+        <NamedIndividual IRI="#NV09"/>
+        <Literal>Trường Sơn - Nha Trang</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DATA_NHAN_VIEN"/>
+        <NamedIndividual IRI="#NV09"/>
+        <Literal>trangnguyen@9thwonder.com</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DIA_CHI"/>
+        <NamedIndividual IRI="#NV09"/>
+        <Literal>Trường Sơn - Nha Trang</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#EMAIL"/>
+        <NamedIndividual IRI="#NV09"/>
+        <Literal>trangnguyen@9thwonder.com</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#HO_TEN"/>
+        <NamedIndividual IRI="#NV09"/>
+        <Literal>Trang Nguyễn</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#NGAY_SINH"/>
+        <NamedIndividual IRI="#NV09"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">1988-08-18T00:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#NOI_SINH"/>
+        <NamedIndividual IRI="#NV09"/>
+        <Literal>Ninh Hòa - Khánh Hòa</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#NamVaoNganh"/>
+        <NamedIndividual IRI="#NV09"/>
+        <Literal>2012</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#QUE_QUAN"/>
+        <NamedIndividual IRI="#NV09"/>
+        <Literal>Ninh Hòa - Khánh Hòa</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#SDT"/>
+        <NamedIndividual IRI="#NV09"/>
+        <Literal>0987525416</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DATA_NHAN_VIEN"/>
+        <NamedIndividual IRI="#NV10"/>
+        <Literal>0987665877645</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DATA_NHAN_VIEN"/>
+        <NamedIndividual IRI="#NV10"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">1971-12-02T00:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DATA_NHAN_VIEN"/>
+        <NamedIndividual IRI="#NV10"/>
+        <Literal>1994</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DATA_NHAN_VIEN"/>
+        <NamedIndividual IRI="#NV10"/>
+        <Literal>Dương Nguyễn</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DATA_NHAN_VIEN"/>
+        <NamedIndividual IRI="#NV10"/>
+        <Literal>Nha Trang - Khánh Hòa</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DATA_NHAN_VIEN"/>
+        <NamedIndividual IRI="#NV10"/>
+        <Literal>Trần Quý Cáp - Nha Trang</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DATA_NHAN_VIEN"/>
+        <NamedIndividual IRI="#NV10"/>
+        <Literal>duongnguyen@9thwonder.com</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#DIA_CHI"/>
+        <NamedIndividual IRI="#NV10"/>
+        <Literal>Trần Quý Cáp - Nha Trang</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#EMAIL"/>
+        <NamedIndividual IRI="#NV10"/>
+        <Literal>duongnguyen@9thwonder.com</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#HO_TEN"/>
+        <NamedIndividual IRI="#NV10"/>
+        <Literal>Dương Nguyễn</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#NGAY_SINH"/>
+        <NamedIndividual IRI="#NV10"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">1971-12-02T00:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#NOI_SINH"/>
+        <NamedIndividual IRI="#NV10"/>
+        <Literal>Nha Trang - Khánh Hòa</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#NamVaoNganh"/>
+        <NamedIndividual IRI="#NV10"/>
+        <Literal>1994</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#QUE_QUAN"/>
+        <NamedIndividual IRI="#NV10"/>
+        <Literal>Nha Trang - Khánh Hòa</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#SDT"/>
+        <NamedIndividual IRI="#NV10"/>
+        <Literal>0987665877645</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#TEN_DA"/>
+        <NamedIndividual IRI="#P360"/>
+        <Literal>P360</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#TEN_DA"/>
+        <NamedIndividual IRI="#RealEstate_PAGE"/>
+        <Literal>RealEstate_PAGE</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#nv_thuoc_team"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#CV_cua_NV"/>
+        <ObjectProperty IRI="#NV_co_CV"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#duan_tao_ra_boi_team"/>
+        <ObjectProperty IRI="#team_tao_ra_duan"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#nv_thuoc_team"/>
+        <ObjectProperty IRI="#team_co_nv"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#NV_co_CV"/>
+        <Class IRI="#NHAN_VIEN"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#duan_tao_ra_boi_team"/>
+        <Class IRI="#DUAN"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#team_co_nv"/>
+        <Class IRI="#TEAM"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#NV_co_CV"/>
+        <Class IRI="#CHUC_VU"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#duan_tao_ra_boi_team"/>
+        <Class IRI="#TEAM"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#team_co_nv"/>
+        <Class IRI="#DUAN"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#DIA_CHI"/>
+        <DataProperty IRI="#DATA_NHAN_VIEN"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#EMAIL"/>
+        <DataProperty IRI="#DATA_NHAN_VIEN"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#HO_TEN"/>
+        <DataProperty IRI="#DATA_NHAN_VIEN"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#NGAY_SINH"/>
+        <DataProperty IRI="#DATA_NHAN_VIEN"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#NOI_SINH"/>
+        <DataProperty IRI="#DATA_NHAN_VIEN"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#NamVaoNganh"/>
+        <DataProperty IRI="#DATA_NHAN_VIEN"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#QUE_QUAN"/>
+        <DataProperty IRI="#DATA_NHAN_VIEN"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#SDT"/>
+        <DataProperty IRI="#DATA_NHAN_VIEN"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#TEN_DA"/>
+        <DataProperty IRI="#DA"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#TEN_TEAM"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#ngon_ngu"/>
+        <DataProperty IRI="#DA"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#tom_tat"/>
+        <DataProperty IRI="#DA"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#DA"/>
+        <Class IRI="#DUAN"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#DATA_NHAN_VIEN"/>
+        <Class IRI="#NHAN_VIEN"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#DIA_CHI"/>
+        <Class IRI="#NHAN_VIEN"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#EMAIL"/>
+        <Class IRI="#NHAN_VIEN"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#HO_TEN"/>
+        <Class IRI="#NHAN_VIEN"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#NGAY_SINH"/>
+        <Class IRI="#NHAN_VIEN"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#NOI_SINH"/>
+        <Class IRI="#NHAN_VIEN"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#NamVaoNganh"/>
+        <Class IRI="#NHAN_VIEN"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#QUE_QUAN"/>
+        <Class IRI="#NHAN_VIEN"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#SDT"/>
+        <Class IRI="#NHAN_VIEN"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#TEN_CV"/>
+        <Class IRI="#CHUC_VU"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#TEN_DA"/>
+        <Class IRI="#DUAN"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#TEN_TEAM"/>
+        <Class IRI="#TEAM"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ngon_ngu"/>
+        <Class IRI="#DUAN"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#tom_tat"/>
+        <Class IRI="#DUAN"/>
+    </DataPropertyDomain>
+    <DisjointDataProperties>
+        <DataProperty IRI="#DIA_CHI"/>
+        <DataProperty IRI="#EMAIL"/>
+        <DataProperty IRI="#HO_TEN"/>
+        <DataProperty IRI="#NGAY_SINH"/>
+        <DataProperty IRI="#NOI_SINH"/>
+        <DataProperty IRI="#SDT"/>
+    </DisjointDataProperties>
+    <DisjointDataProperties>
+        <DataProperty IRI="#DIA_CHI"/>
+        <DataProperty IRI="#EMAIL"/>
+        <DataProperty IRI="#HO_TEN"/>
+        <DataProperty IRI="#NGAY_SINH"/>
+        <DataProperty IRI="#QUE_QUAN"/>
+        <DataProperty IRI="#SDT"/>
+    </DisjointDataProperties>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block page_content %}
+<h1>Nhân Viên</h1>
+<div>
+    <form action="{% url 'nhanvien_search' %}" method="POST">
+      {% csrf_token %}
+      <input name="q" type="text" placeholder="Search...">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+</div>
+<div class="row">
+{% for nhanvien in nhanviens %}
+    <div class="col-md-4">
+        <div class="card mb-2">
+            <div class="card-body">
+                <h5 class="card-title">{{ nhanvien.name }}</h5>
+                <p class="card-text">{{ nhanvien.address }}</p>
+                <p class="card-text">{{ nhanvien.email }}</p>
+                <a href="{% url 'nhanvien_detail' nhanvien.id %}"
+                   class="btn btn-primary">
+                    Detail
+                </a>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

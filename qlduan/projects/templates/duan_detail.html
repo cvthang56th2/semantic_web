@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block page_content %}
+<h1>{{ duan.name}}</h1>
+<div>
+    <h5>ngon_ngu:</h5>
+    <p>{{ duan.ngon_ngu }}</p>
+    <h5>Summary:</h5>
+    <p>{{ duan.summary}}</p>
+    <h5>Team:</h5>
+    <p>{{ duan.team.name }}</p>
+    <h5>Year:</h5>
+    <p>{{ duan.year }}</p>
+    <h5>Nhanviens:</h5>
+    <p>
+        {% for nhanvien in duan.nhanviens %}
+            <a href="{% url 'nhanvien_detail' nhanvien.id %}">
+                {{nhanvien.name}}
+            </a>
+        {% endfor %}
+    </p>
+</div>
+{% endblock %}

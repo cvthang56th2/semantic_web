@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block page_content %}
+<h1>{{ team.name }}</h1>
+<div>
+    <h5>Nhân Viên:</h5>
+    <p>
+        {% for nhanvien in team.nhanviens %}
+            <div>
+                <a href="{% url 'nhanvien_detail' nhanvien.id %}">{{nhanvien.name}}</a>
+            </div>
+        {% endfor %}
+    </p>
+    <h5>Dự Án:</h5>
+    <p>
+        {% for duan in team.duans %}
+            <div>
+                <a href="{% url 'duan_detail' duan.id %}">{{duan.name}}</a>
+            </div>
+        {% endfor %}
+    </p>
+</div>
+{% endblock %}

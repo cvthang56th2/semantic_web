@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block page_content %}
+<h1>Dự Án</h1>
+<div>
+    <form action="{% url 'duan_search' %}" method="POST">
+      {% csrf_token %}
+      <input name="q" type="text" placeholder="Search...">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+</div>
+<div class="row">
+{% for duan in duans %}
+    <div class="col-md-4">
+        <div class="card mb-2">
+            <div class="card-body">
+                <h5 class="card-title">{{ duan.name }}</h5>
+                <p class="card-text">{{ duan.ngon_ngu }}</p>
+                <p class="card-text">{{ duan.ten_team_tao_ra }}</p>
+                <p class="card-text">
+                    {% for nhanvien in duan.nhanviens %}
+                        <a href="{% url 'nhanvien_detail' nhanvien.id %}">
+                            {{nhanvien.name}}
+                        </a>
+                    {% endfor %}
+                 </p>
+                <a href="{% url 'duan_detail' duan.id %}"
+                   class="btn btn-primary">
+                    Detail
+                </a>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

@@ -37,7 +37,7 @@ def search():
   # Todo: init data for search
   print("***************************************")
   print("***************************************")
-  print(list(getattr(onto, searchClass).instances()))
+  # print(list(getattr(onto, searchClass).instances()))
   print("***************************************")
   print("***************************************")
 
