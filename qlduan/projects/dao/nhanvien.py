@@ -5,11 +5,11 @@ class Nhanvien:
     _birthplace = None
     _hometown = None
     _address = None
-    _year = None
     _email = None
     _phone = None
     _team = None
-    _title = None
+    _ten_chucvu = None
+    _avatar = None
     _duans = []
 
     @property
@@ -61,14 +61,6 @@ class Nhanvien:
         self._address = value
 
     @property
-    def year(self):
-        return self._year
-
-    @year.setter
-    def year(self, value):
-        self._year = value
-
-    @property
     def email(self):
         return self._email
 
@@ -93,12 +85,20 @@ class Nhanvien:
         self._team = value
 
     @property
-    def title(self):
-        return self._title
+    def ten_chucvu(self):
+        return self._ten_chucvu
     
-    @title.setter
-    def title(self, value):
-        self._title = value
+    @ten_chucvu.setter
+    def ten_chucvu(self, value):
+        self._ten_chucvu = value
+    @property
+
+    def avatar(self):
+        return self._avatar
+    
+    @avatar.setter
+    def avatar(self, value):
+        self._avatar = value
 
     @property
     def duans(self):

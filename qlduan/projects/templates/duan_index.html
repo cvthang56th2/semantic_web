@@ -13,20 +13,24 @@
     <div class="col-md-4">
         <div class="card mb-2">
             <div class="card-body">
-                <h5 class="card-title">{{ duan.name }}</h5>
-                <p class="card-text">{{ duan.ngon_ngu }}</p>
-                <p class="card-text">{{ duan.ten_team_tao_ra }}</p>
+                <a href="{% url 'duan_detail' duan.id %}">
+                    <h5 class="card-title">{{ duan.name }}</h5>
+                </a>
                 <p class="card-text">
+                    <b>Ngôn ngữ:</b> {{ duan.ngon_ngu }}
+                </p>
+                <p class="card-text">
+                    <b>Team:</b>
+                    <a href="{% url 'team_detail' duan.team.id %}">{{ duan.ten_team_tao_ra }}</a>
+                </p>
+                <p class="card-text">
+                    <b>Thành viên:</b>
                     {% for nhanvien in duan.nhanviens %}
                         <a href="{% url 'nhanvien_detail' nhanvien.id %}">
                             {{nhanvien.name}}
-                        </a>
+                        </a>.
                     {% endfor %}
                  </p>
-                <a href="{% url 'duan_detail' duan.id %}"
-                   class="btn btn-primary">
-                    Detail
-                </a>
             </div>
         </div>
     </div>

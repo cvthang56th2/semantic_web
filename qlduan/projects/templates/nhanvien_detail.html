@@ -1,33 +1,44 @@
 {% extends "base.html" %}
 {% block page_content %}
-<h1>{{ nhanvien.name }}</h1>
-<div>
-    <h5>Birth date:</h5>
-    <p>{{ nhanvien.birthdate }}</p>
-    <h5>Birth place:</h5>
-    <p>{{ nhanvien.birthplace }}</p>
-    <h5>Home town:</h5>
-    <p>{{ nhanvien.hometown }}</p>
-    <h5>Address:</h5>
-    <p>{{ nhanvien.address }}</p>
-    <h5>Year:</h5>
-    <p>{{ nhanvien.year }}</p>
-    <h5>Email:</h5>
-    <p>{{ nhanvien.email }}</p>
-    <h5>Team:</h5>
-    <p>{{ nhanvien.team.name }}</p>
-    <h5>Title:</h5>
-    <p>{{ nhanvien.title }}</p>
-    <h5>DuAns:</h5>
-    <p>
-        {% for duan in nhanvien.duans %}
-            <div>
-                <a href="{% url 'duan_detail' duan.id %}">
-                    {{ duan.name }}
-                </a>
-            </div>
-        {% endfor %}
-    </p>
+<!-- <a href="{% url 'nhanvien_index' %}">List Nhân viên</a> -->
+<div class="mt-4">
+    <div class="d-flex">
+        <div class="col-4 text-center">
+            {% load static %}
+            <img src="{% get_static_prefix %}images/{{ nhanvien.avatar }}" alt="My image" width="200px">
+            <h1>{{ nhanvien.name }}</h1>
+            <h5>{{ nhanvien.ten_chucvu }}</h5>
+        </div>
+        <div class="col-4">
+            <h4>Thông tin cơ bản</h4>
+            <h5>Birth date:</h5>
+            <p>{{ nhanvien.birthdate }}</p>
+            <h5>Birth place:</h5>
+            <p>{{ nhanvien.birthplace }}</p>
+            <h5>Home town:</h5>
+            <p>{{ nhanvien.hometown }}</p>
+            <h5>Address:</h5>
+            <p>{{ nhanvien.address }}</p>
+            <h5>Email:</h5>
+            <p>{{ nhanvien.email }}</p>
+        </div>
+        <div class="col-4">
+            <h5>Team:</h5>
+            <a href="{% url 'team_detail' nhanvien.team.id %}">
+                <p>{{ nhanvien.team.name }}</p>
+            </a>
+            <h5>Dự án:</h5>
+            <p>
+                {% for duan in nhanvien.duans %}
+                    <div>
+                        <a href="{% url 'duan_detail' duan.id %}">
+                            {{ duan.name }}
+                        </a>
+                    </div>
+                {% endfor %}
+            </p>
+        </div>
+    </div>
 </div>
 
 {% endblock %}

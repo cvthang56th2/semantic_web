@@ -4,7 +4,6 @@ class DuAn:
     _ngon_ngu = None
     _summary = None
     _team = None
-    _year = None
     _nhanviens = []
 
     @property
@@ -46,14 +45,6 @@ class DuAn:
     @team.setter
     def team(self, value):
         self._team = value
-    
-    @property
-    def year(self):
-        return self._year
-    
-    @year.setter
-    def year(self, value):
-        self._year = value
 
     @property
     def nhanviens(self):

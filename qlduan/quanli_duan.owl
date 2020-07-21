@@ -76,9 +76,6 @@
         <DataProperty IRI="#NOI_SINH"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#NamVaoNganh"/>
-    </Declaration>
-    <Declaration>
         <DataProperty IRI="#QUE_QUAN"/>
     </Declaration>
     <Declaration>
@@ -94,10 +91,16 @@
         <DataProperty IRI="#TEN_TEAM"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="#avatar"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="#ngon_ngu"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#tom_tat"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Developer"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#GROUP_1"/>
@@ -110,6 +113,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#GROUP_MAZI"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Leader"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#MAZI_APP"/>
@@ -151,7 +157,13 @@
         <NamedIndividual IRI="#P360"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#ProjectManager"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#RealEstate_PAGE"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tester"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
@@ -185,6 +197,10 @@
         <Class IRI="#WEB_APPLICATION"/>
     </DisjointClasses>
     <ClassAssertion>
+        <Class IRI="#CHUC_VU"/>
+        <NamedIndividual IRI="#Developer"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#TEAM"/>
         <NamedIndividual IRI="#GROUP_1"/>
     </ClassAssertion>
@@ -199,6 +215,10 @@
     <ClassAssertion>
         <Class IRI="#TEAM"/>
         <NamedIndividual IRI="#GROUP_MAZI"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CHUC_VU"/>
+        <NamedIndividual IRI="#Leader"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#WEB_APPLICATION"/>
@@ -253,8 +273,16 @@
         <NamedIndividual IRI="#P360"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#CHUC_VU"/>
+        <NamedIndividual IRI="#ProjectManager"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#LANDING_PAGE"/>
         <NamedIndividual IRI="#RealEstate_PAGE"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CHUC_VU"/>
+        <NamedIndividual IRI="#Tester"/>
     </ClassAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#duan_tao_ra_boi_team"/>
@@ -267,9 +295,19 @@
         <NamedIndividual IRI="#GROUP_1"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#NV_co_CV"/>
+        <NamedIndividual IRI="#NV01"/>
+        <NamedIndividual IRI="#Leader"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#nv_thuoc_team"/>
         <NamedIndividual IRI="#NV01"/>
         <NamedIndividual IRI="#GROUP_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#NV_co_CV"/>
+        <NamedIndividual IRI="#NV02"/>
+        <NamedIndividual IRI="#Leader"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#nv_thuoc_team"/>
@@ -277,9 +315,19 @@
         <NamedIndividual IRI="#GROUP_2"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#NV_co_CV"/>
+        <NamedIndividual IRI="#NV03"/>
+        <NamedIndividual IRI="#Leader"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#nv_thuoc_team"/>
         <NamedIndividual IRI="#NV03"/>
         <NamedIndividual IRI="#GROUP_MAZI"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#NV_co_CV"/>
+        <NamedIndividual IRI="#NV04"/>
+        <NamedIndividual IRI="#Developer"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#nv_thuoc_team"/>
@@ -287,9 +335,19 @@
         <NamedIndividual IRI="#GROUP_MAZI"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#NV_co_CV"/>
+        <NamedIndividual IRI="#NV05"/>
+        <NamedIndividual IRI="#Developer"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#nv_thuoc_team"/>
         <NamedIndividual IRI="#NV05"/>
         <NamedIndividual IRI="#GROUP_MAZI"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#NV_co_CV"/>
+        <NamedIndividual IRI="#NV06"/>
+        <NamedIndividual IRI="#Developer"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#nv_thuoc_team"/>
@@ -297,9 +355,19 @@
         <NamedIndividual IRI="#GROUP_MAZI"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#NV_co_CV"/>
+        <NamedIndividual IRI="#NV07"/>
+        <NamedIndividual IRI="#ProjectManager"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#nv_thuoc_team"/>
         <NamedIndividual IRI="#NV07"/>
         <NamedIndividual IRI="#GROUP_3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#NV_co_CV"/>
+        <NamedIndividual IRI="#NV08"/>
+        <NamedIndividual IRI="#Developer"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#nv_thuoc_team"/>
@@ -307,9 +375,19 @@
         <NamedIndividual IRI="#GROUP_3"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#NV_co_CV"/>
+        <NamedIndividual IRI="#NV09"/>
+        <NamedIndividual IRI="#Tester"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="#nv_thuoc_team"/>
         <NamedIndividual IRI="#NV09"/>
         <NamedIndividual IRI="#GROUP_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#NV_co_CV"/>
+        <NamedIndividual IRI="#NV10"/>
+        <NamedIndividual IRI="#Tester"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#nv_thuoc_team"/>
@@ -326,6 +404,11 @@
         <NamedIndividual IRI="#RealEstate_PAGE"/>
         <NamedIndividual IRI="#GROUP_2"/>
     </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#TEN_CV"/>
+        <NamedIndividual IRI="#Developer"/>
+        <Literal>Developer</Literal>
+    </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#TEN_TEAM"/>
         <NamedIndividual IRI="#GROUP_1"/>
@@ -347,6 +430,11 @@
         <Literal>GROUP_MAZI</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="#TEN_CV"/>
+        <NamedIndividual IRI="#Leader"/>
+        <Literal>Leader</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="#TEN_DA"/>
         <NamedIndividual IRI="#MAZI_APP"/>
         <Literal>MAZI APPLICATON</Literal>
@@ -354,7 +442,7 @@
     <DataPropertyAssertion>
         <DataProperty IRI="#ngon_ngu"/>
         <NamedIndividual IRI="#MAZI_APP"/>
-        <Literal></Literal>
+        <Literal>NodeJS, VueJS, HapiJS</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#tom_tat"/>
@@ -427,11 +515,6 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">1965-06-01T01:01:01</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#NamVaoNganh"/>
-        <NamedIndividual IRI="#NV01"/>
-        <Literal>1990</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
         <DataProperty IRI="#QUE_QUAN"/>
         <NamedIndividual IRI="#NV01"/>
         <Literal>Phú Yên</Literal>
@@ -440,6 +523,11 @@
         <DataProperty IRI="#SDT"/>
         <NamedIndividual IRI="#NV01"/>
         <Literal>0905337987</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#avatar"/>
+        <NamedIndividual IRI="#NV01"/>
+        <Literal>danh.jpg</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#DATA_NHAN_VIEN"/>
@@ -502,11 +590,6 @@
         <Literal>Diên Khánh - Nha Trang</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#NamVaoNganh"/>
-        <NamedIndividual IRI="#NV02"/>
-        <Literal>2005</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
         <DataProperty IRI="#QUE_QUAN"/>
         <NamedIndividual IRI="#NV02"/>
         <Literal>Diên Khánh - Nha Trang</Literal>
@@ -515,6 +598,11 @@
         <DataProperty IRI="#SDT"/>
         <NamedIndividual IRI="#NV02"/>
         <Literal>00988642157</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#avatar"/>
+        <NamedIndividual IRI="#NV02"/>
+        <Literal>liem.jpg</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#DATA_NHAN_VIEN"/>
@@ -577,11 +665,6 @@
         <Literal>Nha Trang</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#NamVaoNganh"/>
-        <NamedIndividual IRI="#NV03"/>
-        <Literal>2012</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
         <DataProperty IRI="#QUE_QUAN"/>
         <NamedIndividual IRI="#NV03"/>
         <Literal>Nha Trang</Literal>
@@ -590,6 +673,11 @@
         <DataProperty IRI="#SDT"/>
         <NamedIndividual IRI="#NV03"/>
         <Literal>09234776726382</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#avatar"/>
+        <NamedIndividual IRI="#NV03"/>
+        <Literal>loi.jpg</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#DATA_NHAN_VIEN"/>
@@ -652,11 +740,6 @@
         <Literal>Nha Trang</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#NamVaoNganh"/>
-        <NamedIndividual IRI="#NV04"/>
-        <Literal>2012</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
         <DataProperty IRI="#QUE_QUAN"/>
         <NamedIndividual IRI="#NV04"/>
         <Literal>Nha Trang</Literal>
@@ -665,6 +748,11 @@
         <DataProperty IRI="#SDT"/>
         <NamedIndividual IRI="#NV04"/>
         <Literal>0987502856</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#avatar"/>
+        <NamedIndividual IRI="#NV04"/>
+        <Literal>thang.jpg</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#DATA_NHAN_VIEN"/>
@@ -727,11 +815,6 @@
         <Literal>Thừa Thiên Huế</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#NamVaoNganh"/>
-        <NamedIndividual IRI="#NV05"/>
-        <Literal>1995</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
         <DataProperty IRI="#QUE_QUAN"/>
         <NamedIndividual IRI="#NV05"/>
         <Literal>Thừa Thiên Huế</Literal>
@@ -740,6 +823,11 @@
         <DataProperty IRI="#SDT"/>
         <NamedIndividual IRI="#NV05"/>
         <Literal>0905135486</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#avatar"/>
+        <NamedIndividual IRI="#NV05"/>
+        <Literal>an.jpg</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#DATA_NHAN_VIEN"/>
@@ -797,14 +885,14 @@
         <Literal>Ninh Hòa - Khánh Hòa</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#NamVaoNganh"/>
-        <NamedIndividual IRI="#NV06"/>
-        <Literal>2002</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
         <DataProperty IRI="#QUE_QUAN"/>
         <NamedIndividual IRI="#NV06"/>
         <Literal>Ninh Hòa - Khánh Hòa</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#avatar"/>
+        <NamedIndividual IRI="#NV06"/>
+        <Literal>y.jpg</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#DATA_NHAN_VIEN"/>
@@ -872,11 +960,6 @@
         <Literal>Phong DDienf - Thừa Thiên Huế</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#NamVaoNganh"/>
-        <NamedIndividual IRI="#NV07"/>
-        <Literal>2010</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
         <DataProperty IRI="#QUE_QUAN"/>
         <NamedIndividual IRI="#NV07"/>
         <Literal>Thừa Thiên Huế</Literal>
@@ -885,6 +968,11 @@
         <DataProperty IRI="#SDT"/>
         <NamedIndividual IRI="#NV07"/>
         <Literal>0356008524</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#avatar"/>
+        <NamedIndividual IRI="#NV07"/>
+        <Literal>duc.jpg</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#DATA_NHAN_VIEN"/>
@@ -947,11 +1035,6 @@
         <Literal>Quảng Bình</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#NamVaoNganh"/>
-        <NamedIndividual IRI="#NV08"/>
-        <Literal>2010</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
         <DataProperty IRI="#QUE_QUAN"/>
         <NamedIndividual IRI="#NV08"/>
         <Literal>Quảng Bình</Literal>
@@ -960,6 +1043,11 @@
         <DataProperty IRI="#SDT"/>
         <NamedIndividual IRI="#NV08"/>
         <Literal>09875432176</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#avatar"/>
+        <NamedIndividual IRI="#NV08"/>
+        <Literal>vo.jpg</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#DATA_NHAN_VIEN"/>
@@ -1022,11 +1110,6 @@
         <Literal>Ninh Hòa - Khánh Hòa</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#NamVaoNganh"/>
-        <NamedIndividual IRI="#NV09"/>
-        <Literal>2012</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
         <DataProperty IRI="#QUE_QUAN"/>
         <NamedIndividual IRI="#NV09"/>
         <Literal>Ninh Hòa - Khánh Hòa</Literal>
@@ -1035,6 +1118,11 @@
         <DataProperty IRI="#SDT"/>
         <NamedIndividual IRI="#NV09"/>
         <Literal>0987525416</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#avatar"/>
+        <NamedIndividual IRI="#NV09"/>
+        <Literal>trang.jpg</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#DATA_NHAN_VIEN"/>
@@ -1097,11 +1185,6 @@
         <Literal>Nha Trang - Khánh Hòa</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#NamVaoNganh"/>
-        <NamedIndividual IRI="#NV10"/>
-        <Literal>1994</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
         <DataProperty IRI="#QUE_QUAN"/>
         <NamedIndividual IRI="#NV10"/>
         <Literal>Nha Trang - Khánh Hòa</Literal>
@@ -1112,19 +1195,40 @@
         <Literal>0987665877645</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="#avatar"/>
+        <NamedIndividual IRI="#NV10"/>
+        <Literal>duong.jpg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="#TEN_DA"/>
         <NamedIndividual IRI="#P360"/>
         <Literal>P360</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ngon_ngu"/>
+        <NamedIndividual IRI="#P360"/>
+        <Literal>C#</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#TEN_CV"/>
+        <NamedIndividual IRI="#ProjectManager"/>
+        <Literal>ProjectManager</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#TEN_DA"/>
         <NamedIndividual IRI="#RealEstate_PAGE"/>
         <Literal>RealEstate_PAGE</Literal>
     </DataPropertyAssertion>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#nv_thuoc_team"/>
-        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
-    </SubObjectPropertyOf>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ngon_ngu"/>
+        <NamedIndividual IRI="#RealEstate_PAGE"/>
+        <Literal>Wordpress HTML CSS</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#TEN_CV"/>
+        <NamedIndividual IRI="#Tester"/>
+        <Literal>Tester</Literal>
+    </DataPropertyAssertion>
     <InverseObjectProperties>
         <ObjectProperty IRI="#CV_cua_NV"/>
         <ObjectProperty IRI="#NV_co_CV"/>
@@ -1146,8 +1250,8 @@
         <Class IRI="#DUAN"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#team_co_nv"/>
-        <Class IRI="#TEAM"/>
+        <ObjectProperty IRI="#nv_thuoc_team"/>
+        <Class IRI="#NHAN_VIEN"/>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#NV_co_CV"/>
@@ -1158,8 +1262,8 @@
         <Class IRI="#TEAM"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#team_co_nv"/>
-        <Class IRI="#DUAN"/>
+        <ObjectProperty IRI="#nv_thuoc_team"/>
+        <Class IRI="#TEAM"/>
     </ObjectPropertyRange>
     <SubDataPropertyOf>
         <DataProperty IRI="#DIA_CHI"/>
@@ -1182,10 +1286,6 @@
         <DataProperty IRI="#DATA_NHAN_VIEN"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
-        <DataProperty IRI="#NamVaoNganh"/>
-        <DataProperty IRI="#DATA_NHAN_VIEN"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
         <DataProperty IRI="#QUE_QUAN"/>
         <DataProperty IRI="#DATA_NHAN_VIEN"/>
     </SubDataPropertyOf>
@@ -1200,6 +1300,10 @@
     <SubDataPropertyOf>
         <DataProperty IRI="#TEN_TEAM"/>
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#avatar"/>
+        <DataProperty IRI="#DATA_NHAN_VIEN"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#ngon_ngu"/>
@@ -1238,10 +1342,6 @@
         <Class IRI="#NHAN_VIEN"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="#NamVaoNganh"/>
-        <Class IRI="#NHAN_VIEN"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
         <DataProperty IRI="#QUE_QUAN"/>
         <Class IRI="#NHAN_VIEN"/>
     </DataPropertyDomain>
@@ -1260,6 +1360,10 @@
     <DataPropertyDomain>
         <DataProperty IRI="#TEN_TEAM"/>
         <Class IRI="#TEAM"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#avatar"/>
+        <Class IRI="#NHAN_VIEN"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#ngon_ngu"/>
@@ -1284,6 +1388,15 @@
         <DataProperty IRI="#NGAY_SINH"/>
         <DataProperty IRI="#QUE_QUAN"/>
         <DataProperty IRI="#SDT"/>
+    </DisjointDataProperties>
+    <DisjointDataProperties>
+        <DataProperty IRI="#DIA_CHI"/>
+        <DataProperty IRI="#EMAIL"/>
+        <DataProperty IRI="#HO_TEN"/>
+        <DataProperty IRI="#NGAY_SINH"/>
+        <DataProperty IRI="#QUE_QUAN"/>
+        <DataProperty IRI="#SDT"/>
+        <DataProperty IRI="#avatar"/>
     </DisjointDataProperties>
 </Ontology>
 

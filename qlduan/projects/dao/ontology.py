@@ -36,22 +36,18 @@ def build_nhanvien(data, fetch=False):
     nv.birthplace = get_value(data.NOI_SINH)
     nv.hometown = get_value(data.QUE_QUAN)
     nv.address = get_value(data.DIA_CHI)
-    nv.year = get_value(data.NamVaoNganh)
     nv.email = get_value(data.EMAIL)
     nv.phone = get_value(data.SDT)
+    nv.avatar = get_value(data.avatar)
 
     if fetch:
         if data.nv_thuoc_team:
-            nv.team = build_team(data.nv_thuoc_team[0])
+            nv.team = build_team(data.nv_thuoc_team[0], True)
             cv = get_value(data.NV_co_CV)
             if cv:
-                nv.title = get_value(cv.TEN_CV)
+                nv.ten_chucvu = get_value(cv.TEN_CV)
 
-            duans = []
-            for item in data.la_tac_gia_cua:
-                da = build_duan(item)
-                duans.append(da)
-            nv.duans = duans
+            nv.duans = nv.team.duans
     return nv
 
 def build_duan(data, fetch=False):
@@ -62,15 +58,10 @@ def build_duan(data, fetch=False):
     da.summary = get_value(data.tom_tat)
     
     if fetch:
-        da.team = build_team(data.duan_tao_ra_boi_team[0])
+        da.team = build_team(data.duan_tao_ra_boi_team[0], True)
         if da.team:
             da.ten_team_tao_ra = da.team.name
-
-            nhanviens = []
-            for item in da.team.duan_tao_ra_boi_team:
-                nv = build_nhanvien(item)
-                nhanviens.append(nv)
-            da.nhanviens = nhanviens
+            da.nhanviens = da.team.nhanviens
     return da
 
 class Ontology:
@@ -80,19 +71,20 @@ class Ontology:
         self.graph = self.world.as_rdflib_graph()
     
     def search_nhanviens(self, query):
-        queryString = 'PREFIX dt:<http://www.semanticweb.org/quanlidetai#> SELECT ?tennv WHERE { ?tennv dt:HO_TEN ?ten FILTER regex(?ten, "%s")}' % query
+        computedQuery = str(query).title()
+        queryString = 'PREFIX dt:<http://www.semanticweb.org/quanlidetai#> SELECT ?tennv WHERE { ?tennv dt:HO_TEN ?ten FILTER regex(?ten, "%s")}' % computedQuery
         result = list(self.graph.query(queryString))
 
         nhanviens = []
         for item in result:
-            nv = build_nhanvien(self.world[str(item['tennv'])])
+            nv = build_nhanvien(self.world[str(item['tennv'])], True)
             nhanviens.append(nv)
         return nhanviens
 
     def get_nhanviens(self):
         nhanviens = []
         for item in self.onto.NHAN_VIEN.instances():
-            nv = build_nhanvien(item)
+            nv = build_nhanvien(item, True)
             nhanviens.append(nv)
         return nhanviens
 
@@ -101,7 +93,8 @@ class Ontology:
         return build_nhanvien(item, fetch=True)
 
     def search_duans(self, query):
-        queryString = 'PREFIX dt:<http://www.semanticweb.org/quanlidetai#> SELECT ?tenda WHERE { ?tenda dt:TEN_DA ?ten FILTER regex(?ten, "%s")}' % query
+        computedQuery = str(query).title()
+        queryString = 'PREFIX dt:<http://www.semanticweb.org/quanlidetai#> SELECT ?tenda WHERE { ?tenda dt:TEN_DA ?ten FILTER regex(?ten, "%s")}' % computedQuery
         result = list(self.graph.query(queryString))
 
         duans = []

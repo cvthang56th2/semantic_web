@@ -1,8 +1,9 @@
 {% extends "base.html" %}
 {% block page_content %}
+<!-- <a href="{% url 'team_index' %}">List Teams</a> -->
 <h1>{{ team.name }}</h1>
 <div>
-    <h5>Nhân Viên:</h5>
+    <h5>Thành Viên:</h5>
     <p>
         {% for nhanvien in team.nhanviens %}
             <div>
