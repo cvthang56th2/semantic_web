@@ -1,5 +1,5 @@
 from owlready2 import *
-from rdflib import *
+# from rdflib import *
 from .nhanvien import Nhanvien
 from .duan import DuAn
 from .team import Team

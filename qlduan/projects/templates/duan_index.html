@@ -4,10 +4,17 @@
 <div>
     <form action="{% url 'duan_search' %}" method="POST">
       {% csrf_token %}
-      <input name="q" type="text" placeholder="Search...">
+      <input name="q" type="text" placeholder="Search..." value="{{keyword}}">
       <button type="submit"><i class="fa fa-search"></i></button>
     </form>
 </div>
+<h3>
+    {% if keyword %}
+        Tìm thấy {{ duans|length }} kết quả cho keyword "{{ keyword }}"
+    {% else %}
+        Tất cả Dự án
+    {% endif %}
+</h3>
 <div class="row">
 {% for duan in duans %}
     <div class="col-md-4">
@@ -34,6 +41,6 @@
             </div>
         </div>
     </div>
-    {% endfor %}
+{% endfor %}
 </div>
 {% endblock %}

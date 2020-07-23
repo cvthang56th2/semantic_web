@@ -8,7 +8,8 @@ def nhanvien_search(request):
     query = request.POST.get('q')
     nhanviens = onto.search_nhanviens(query)
     context = {
-        'nhanviens': nhanviens
+        'nhanviens': nhanviens,
+        'keyword': query
     }
     return render(request, 'nhanvien_index.html', context)
 
@@ -34,7 +35,8 @@ def duan_search(request):
     query = request.POST.get('q')
     duans = onto.search_duans(query)
     context = {
-        'duans': duans
+        'duans': duans,
+        'keyword': query
     }
     return render(request, 'duan_index.html', context)
 

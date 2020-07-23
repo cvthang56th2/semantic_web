@@ -8,6 +8,13 @@
       <button type="submit"><i class="fa fa-search"></i></button>
     </form>
 </div>
+<h3>
+    {% if keyword %}
+        Tìm thấy {{ nhanviens|length }} kết quả cho keyword "{{ keyword }}"
+    {% else %}
+        Tất cả Nhân viên
+    {% endif %}
+</h3>
 <div class="row">
 {% for nhanvien in nhanviens %}
     <div class="col-md-4">
