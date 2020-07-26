@@ -67,3 +67,17 @@ def team_detail(request, id):
         'team': team
     }
     return render(request, 'team_detail.html', context)
+
+def chucvu_index(request):
+    chucvus = onto.get_chucvus()
+    context = {
+        'chucvus': chucvus
+    }
+    return render(request, 'chucvu_index.html', context)
+
+def chucvu_detail(request, id):
+    chucvu = onto.get_chucvu(id)
+    context = {
+        'chucvu': chucvu
+    }
+    return render(request, 'chucvu_detail.html', context)

@@ -3,6 +3,7 @@ from owlready2 import *
 from .nhanvien import Nhanvien
 from .duan import DuAn
 from .team import Team
+from .chucvu import ChucVu
 
 def get_value(value):
     if len(value) > 0:
@@ -26,6 +27,19 @@ def build_team(data, fetch=False):
             duans.append(da)
         team.duans = duans
     return team
+
+def build_chucvu(data, fetch=False):
+    chucvu = ChucVu()
+    chucvu.id = data._name
+    chucvu.name = get_value(data.TEN_CV)
+
+    if fetch:
+        nhanviens = []
+        for item in data.CV_cua_NV:
+            nv = build_nhanvien(item)
+            nhanviens.append(nv)
+        chucvu.nhanviens = nhanviens
+    return chucvu
 
 def build_nhanvien(data, fetch=False):
     nv = Nhanvien()
@@ -124,3 +138,14 @@ class Ontology:
     def get_team(self, id):
         item = self.onto.TEAM(id)
         return build_team(item, fetch=True)
+
+    def get_chucvus(self):
+        chucvus = []
+        for item in self.onto.CHUC_VU.instances():
+            chucvu = build_chucvu(item)
+            chucvus.append(chucvu)
+        return chucvus
+    
+    def get_chucvu(self, id):
+        item = self.onto.CHUC_VU(id)
+        return build_chucvu(item, fetch=True)
