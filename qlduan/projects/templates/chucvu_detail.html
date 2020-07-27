@@ -1,15 +1,25 @@
 {% extends "base.html" %}
 {% block page_content %}
 <h1>{{ chucvu.name }}</h1>
-<div>
-    <h5>Các nhân viên có chức vụ <b>{{ chucvu.name }}</b>:</h5>
-    <p>
-        {{ nhanviens }}
-        {% for nhanvien in chucvu.nhanviens %}
-            <div>
-                <a href="{% url 'nhanvien_detail' nhanvien.id %}">{{nhanvien.name}}</a>
+<h5>Các nhân viên có chức vụ <b>{{ chucvu.name }}</b>:</h5>
+<div class="row">
+    {% for nhanvien in chucvu.nhanviens %}
+    <div class="col-md-4">
+        <div class="card mb-2">
+            <div class="card-body text-center">
+                <a href="{% url 'nhanvien_detail' nhanvien.id %}">
+                    {% load static %}
+                    <img src="{% get_static_prefix %}images/{{ nhanvien.avatar }}" alt="My image" width="100px">
+                </a>
+                <a href="{% url 'nhanvien_detail' nhanvien.id %}">
+                    <h5 class="card-title">{{ nhanvien.name }}</h5>
+                </a>
+                <p>{{ nhanvien.ten_chucvu }}</p>
+                <p class="card-text">{{ nhanvien.address }}</p>
+                <p class="card-text">{{ nhanvien.email }}</p>
             </div>
-        {% endfor %}
-    </p>
+        </div>
+    </div>
+    {% endfor %}
 </div>
 {% endblock %}
