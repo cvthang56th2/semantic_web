@@ -100,6 +100,9 @@
         <DataProperty IRI="#tom_tat"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Boss"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Developer"/>
     </Declaration>
     <Declaration>
@@ -122,6 +125,9 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#MUSIC_APP_ANDROID"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NV00"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#NV01"/>
@@ -198,6 +204,10 @@
     </DisjointClasses>
     <ClassAssertion>
         <Class IRI="#CHUC_VU"/>
+        <NamedIndividual IRI="#Boss"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CHUC_VU"/>
         <NamedIndividual IRI="#Developer"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -227,6 +237,10 @@
     <ClassAssertion>
         <Class IRI="#MOBILE_APP"/>
         <NamedIndividual IRI="#MUSIC_APP_ANDROID"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NHAN_VIEN"/>
+        <NamedIndividual IRI="#NV00"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#NHAN_VIEN"/>
@@ -296,6 +310,16 @@
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#NV_co_CV"/>
+        <NamedIndividual IRI="#NV00"/>
+        <NamedIndividual IRI="#Boss"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#nv_thuoc_team"/>
+        <NamedIndividual IRI="#NV00"/>
+        <NamedIndividual IRI="#ProjectManager"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#NV_co_CV"/>
         <NamedIndividual IRI="#NV01"/>
         <NamedIndividual IRI="#Leader"/>
     </ObjectPropertyAssertion>
@@ -406,6 +430,11 @@
     </ObjectPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#TEN_CV"/>
+        <NamedIndividual IRI="#Boss"/>
+        <Literal>BOSS</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#TEN_CV"/>
         <NamedIndividual IRI="#Developer"/>
         <Literal>Developer</Literal>
     </DataPropertyAssertion>
@@ -460,6 +489,36 @@
         <Literal>Java</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="#DIA_CHI"/>
+        <NamedIndividual IRI="#NV00"/>
+        <Literal>Nha Trang</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#EMAIL"/>
+        <NamedIndividual IRI="#NV00"/>
+        <Literal>duydo@9thwonder.com</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#HO_TEN"/>
+        <NamedIndividual IRI="#NV00"/>
+        <Literal>Duy Do</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#NGAY_SINH"/>
+        <NamedIndividual IRI="#NV00"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">1965-10-16T01:01:01</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#QUE_QUAN"/>
+        <NamedIndividual IRI="#NV00"/>
+        <Literal>Nha Trang</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#avatar"/>
+        <NamedIndividual IRI="#NV00"/>
+        <Literal>duy.jpg</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="#DATA_NHAN_VIEN"/>
         <NamedIndividual IRI="#NV01"/>
         <Literal>0905337987</Literal>
@@ -477,7 +536,7 @@
     <DataPropertyAssertion>
         <DataProperty IRI="#DATA_NHAN_VIEN"/>
         <NamedIndividual IRI="#NV01"/>
-        <Literal>Chế Lan Viên - Nha Trang</Literal>
+        <Literal>Nguyễn Thiện Thuật - Nha Trang</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#DATA_NHAN_VIEN"/>
@@ -497,7 +556,7 @@
     <DataPropertyAssertion>
         <DataProperty IRI="#DIA_CHI"/>
         <NamedIndividual IRI="#NV01"/>
-        <Literal>Chế Lan Viên - Nha Trang</Literal>
+        <Literal>Nguyễn Thiện Thuật - Nha Trang</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#EMAIL"/>

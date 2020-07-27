@@ -8,3 +8,45 @@
 08 Vũ Võ 3 vo Developer
 09 Trang Nguyễn 2 trang Tester
 10 Dương Nguyễn 1 duong Tester
+
+00: {name: "An Nguyen", chucvu: "Developer"}
+01: {name: "Anh Tran", chucvu: "Developer"}
+02: {name: "Chau Cao", chucvu: "Project Supervisor"}
+03: {name: "Danh Dinh", chucvu: "Group Leader"}
+04: {name: "Duc Huynh", chucvu: "Technical Lead"}
+05: {name: "Duong Nguyen", chucvu: "QA Specialist"}
+06: {name: "Duong Tran", chucvu: "QA Specialist"}
+07: {name: "Duy Do", chucvu: "Director Of Online Development"}
+08: {name: "Hien Nguyen", chucvu: "Accountant"}
+09: {name: "Hoa Nguyen", chucvu: "QA Specialist"}
+10: {name: "Hoa Pham", chucvu: "Developer"}
+11: {name: "Hoa TM Pham", chucvu: "QA Specialist"}
+12: {name: "Lanh Nguyen", chucvu: "QA Specialist"}
+13: {name: "Liem Nguyen", chucvu: "Developer"}
+14: {name: "Linh Truong", chucvu: "Developer"}
+15: {name: "Loi Tra", chucvu: "Developer"}
+16: {name: "Long Ho", chucvu: "Developer"}
+17: {name: "My Nguyen", chucvu: "QA Specialist"}
+18: {name: "Nam Nguyen", chucvu: "Animator/Developer"}
+19: {name: "Nguyen Le", chucvu: "Developer"}
+20: {name: "Nhan Pham", chucvu: "Developer"}
+21: {name: "Nhi Nguyen", chucvu: "Office Admin"}
+22: {name: "Phi Nguyen", chucvu: "Developer"}
+23: {name: "Phuoc Huynh", chucvu: "IT Security Engineer"}
+24: {name: "Qui Nguyen", chucvu: "Developer"}
+25: {name: "Sen Vo", chucvu: "Project Manager"}
+26: {name: "Tam Nguyen", chucvu: "Project Manager"}
+27: {name: "Thang Cao", chucvu: "Developer"}
+28: {name: "Thien Ho", chucvu: "Group Leader"}
+29: {name: "Thien Nguyen", chucvu: "Developer"}
+30: {name: "Thuong Tran", chucvu: "Project Manager"}
+31: {name: "Tien M Nguyen", chucvu: "Developer"}
+32: {name: "Tien Nguyen", chucvu: "Developer"}
+33: {name: "Tien Tong", chucvu: "Project Manager"}
+34: {name: "Toan Mai", chucvu: "Developer"}
+35: {name: "Toan Nguyen", chucvu: "Developer"}
+36: {name: "Trang Nguyen", chucvu: "QA Specialist"}
+37: {name: "Tu Tran", chucvu: "Technical Lead"}
+38: {name: "Tuan Ly", chucvu: "Developer"}
+39: {name: "Y Nguyen", chucvu: "Developer"}
+40: {name: "Tien Tong", chucvu: "Project Manager"}

@@ -59,9 +59,15 @@
     margin: 0;
     padding: 0;
   }
+  a {
+    color: #f308cc;
+  }
+  a:hover {
+    text-decoration: none;
+  }
 
   .background {
-    background: rgb(247, 246, 246);
+    /* background: rgb(247, 246, 246); */
     position: absolute;
     display: block;
     top: 0;
@@ -73,8 +79,8 @@
   window.onload = function () {
     Particles.init({
       selector: '.background',
-      sizeVariations: 35,
-      color: ['#000', '#DA0463', '#404B69', '#DBEDF3'],
+      sizeVariations: 15,
+      color: ['#000', '#DA0463', '#404B69', '#DBEDF3', '#F8F2F2'],
     });
   };
 </script>
