@@ -2,10 +2,18 @@
 {% block page_content %}
 
 <h1>Teams</h1>
-{% for team in teams %}
-    <div>
-      <a href="{% url 'team_detail' team.id %}">{{ team.name }}</a>
-    </div>
-{% endfor %}
-
+<ul class="list-group">
+  {% for team in teams %}
+  <a href="{% url 'team_detail' team.id %}">  
+    <div class="list-group-item d-flex">
+        <div class="col-8">
+          {{ team.name }}
+        </div>
+        <div class="col-4">
+          Số lượng thành viên: {{team.nhanviens|length}}
+        </div>
+      </div>
+  </a>
+  {% endfor %}
+</ul>
 {% endblock %}

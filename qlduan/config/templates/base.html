@@ -74,12 +74,21 @@
     left: 0;
     z-index: -1;
   }
+
+  input {
+    border-radius: 4px;
+    border: 1px solid rgb(90, 88, 88);
+    padding: 4px;
+  }
+  .card:hover {
+    background: rgb(238, 241, 241);
+  }
 </style>
 <script>
   window.onload = function () {
     Particles.init({
       selector: '.background',
-      sizeVariations: 15,
+      sizeVariations: 10,
       color: ['#000', '#DA0463', '#404B69', '#DBEDF3', '#F8F2F2'],
     });
   };

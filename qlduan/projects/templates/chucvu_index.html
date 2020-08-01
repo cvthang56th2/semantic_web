@@ -2,10 +2,18 @@
 {% block page_content %}
 
 <h1>Chức vụ</h1>
-{% for chucvu in chucvus %}
-    <div>
-      <a href="{% url 'chucvu_detail' chucvu.id %}">{{ chucvu.name }}</a>
-    </div>
-{% endfor %}
-
+<ul class="list-group">
+  {% for chucvu in chucvus %}
+  <a href="{% url 'chucvu_detail' chucvu.id %}">
+    <div class="list-group-item d-flex">
+        <div class="col-8">
+          {{ chucvu.name }}
+        </div>
+        <div class="col-4">
+          Số lượng: {{chucvu.nhanviens|length}}
+        </div>
+      </div>
+  </a>
+  {% endfor %}
+</ul>
 {% endblock %}

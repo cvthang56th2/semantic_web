@@ -131,7 +131,7 @@ class Ontology:
     def get_teams(self):
         teams = []
         for item in self.onto.TEAM.instances():
-            team = build_team(item)
+            team = build_team(item, True)
             teams.append(team)
         return teams
     
@@ -142,10 +142,18 @@ class Ontology:
     def get_chucvus(self):
         chucvus = []
         for item in self.onto.CHUC_VU.instances():
-            chucvu = build_chucvu(item)
+            chucvu = build_chucvu(item, True)
             chucvus.append(chucvu)
         return chucvus
     
     def get_chucvu(self, id):
         item = self.onto.CHUC_VU(id)
         return build_chucvu(item, fetch=True)
+    
+    def create_chucvu(self, payload_ten_nv):
+        # item  = self.onto.CHUC_VU(payload_ten_nv)
+        _id = payload_ten_nv.title() + '_cv'
+        name = payload_ten_nv
+        item = self.onto.CHUC_VU(_id)
+        item.name = name
+        return True

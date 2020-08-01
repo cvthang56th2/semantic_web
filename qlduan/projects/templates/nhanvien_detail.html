@@ -5,7 +5,7 @@
     <div class="d-flex">
         <div class="col-4 text-center">
             {% load static %}
-            <img src="{% get_static_prefix %}images/{{ nhanvien.avatar }}" alt="My image" width="200px">
+            <img src="{% get_static_prefix %}images/{{ nhanvien.avatar }}" alt="My image" width="200px" style="border-radius: 50%;">
             <h1>{{ nhanvien.name }}</h1>
             <h5>{{ nhanvien.ten_chucvu }}</h5>
         </div>

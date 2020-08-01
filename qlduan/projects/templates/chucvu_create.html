@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block page_content %}
+<h1>Tạo Nhân viên</h1>
+<form action="{% url 'do_create_chucvu' %}" method="POST">
+    {% csrf_token %}
+    <label for="TEN_CV">Tên nhân viên</label>
+    <input id="TEN_CV" name="TEN_CV" type="text" placeholder="Nhập tên nhân viên..." value="{{ keyword }}"><br />
+    <button type="submit" class="btn btn-primary">Tạo</button>
+  </form>
+{% endblock %}

@@ -5,7 +5,7 @@
     <form action="{% url 'nhanvien_search' %}" method="POST">
       {% csrf_token %}
       <input name="q" type="text" placeholder="Search..." value="{{ keyword }}">
-      <button type="submit"><i class="fa fa-search"></i></button>
+      <button type="submit" class="btn btn-primary"><i class="fa fa-search"></i></button>
     </form>
 </div>
 <h3>
@@ -22,7 +22,7 @@
             <div class="card-body text-center">
                 <a href="{% url 'nhanvien_detail' nhanvien.id %}">
                     {% load static %}
-                    <img src="{% get_static_prefix %}images/{{ nhanvien.avatar }}" alt="My image" width="100px">
+                    <img src="{% get_static_prefix %}images/{{ nhanvien.avatar }}" alt="My image" width="100px" style="border-radius: 50%;">
                 </a>
                 <a href="{% url 'nhanvien_detail' nhanvien.id %}">
                     <h5 class="card-title">{{ nhanvien.name }}</h5>

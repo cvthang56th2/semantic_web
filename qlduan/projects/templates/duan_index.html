@@ -5,7 +5,7 @@
     <form action="{% url 'duan_search' %}" method="POST">
       {% csrf_token %}
       <input name="q" type="text" placeholder="Search..." value="{{keyword}}">
-      <button type="submit"><i class="fa fa-search"></i></button>
+      <button type="submit"  class="btn btn-primary"><i class="fa fa-search"></i></button>
     </form>
 </div>
 <h3>

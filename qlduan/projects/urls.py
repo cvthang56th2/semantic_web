@@ -11,5 +11,7 @@ urlpatterns = [
     path("teams", views.team_index, name='team_index'),
     path("teams/<str:id>", views.team_detail, name='team_detail'),
     path("chucvus", views.chucvu_index, name='chucvu_index'),
-    path("chucvus/<str:id>", views.chucvu_detail, name='chucvu_detail')
+    path("chucvus/<str:id>", views.chucvu_detail, name='chucvu_detail'),
+    path("create/chucvu", views.chucvu_create, name='chucvu_create'),
+    path("doing/create/chucvu", views.do_create_chucvu, name='do_create_chucvu')
 ]

@@ -81,3 +81,19 @@ def chucvu_detail(request, id):
         'chucvu': chucvu
     }
     return render(request, 'chucvu_detail.html', context)
+
+def chucvu_create(request):
+    return render(request, 'chucvu_create.html')
+
+def do_create_chucvu(request):
+    # create
+    payload_ten_nv = request.POST.get('TEN_CV')
+    
+    onto.create_chucvu(payload_ten_nv)
+
+    # return list
+    chucvus = onto.get_chucvus()
+    context = {
+        'chucvus': chucvus
+    }
+    return render(request, 'chucvu_index.html', context)
